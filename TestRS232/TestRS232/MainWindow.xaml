@@ -1,0 +1,29 @@
+﻿<Window x:Class="TestRS232.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestRS232"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="0,0,0,220" Background="Aqua" Name="Info">
+            <Label Content="Điện áp đầu ra:" FontWeight="Bold"/>
+            <TextBox Name="inputV" Background="White" Height="20" Margin="0,0,512,0" IsReadOnly="true"/>
+            <Label Content="Dòng điện đầu ra:" FontWeight="Bold"/>
+            <TextBox Name="outputA" Background="White" Height="20" Margin="0,0,512,0" IsReadOnly="true"/>
+            <Label Content="Giá trị muốn đổi(V):" FontWeight="Bold"/>
+            <TextBox Name="ChangeVal" Background="White" Height="20" Margin="0,0,512,0"/>
+            <Label Content="Giá trị muốn đổi(A):" FontWeight="Bold"/>
+            <TextBox Name="ChangeValA" Background="White" Height="20" Margin="0,0,512,0"/>
+            
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,183,0,171">
+            <Button Content="Change"  Margin="0,0,30,0" Height="35" Click="Button_Click"/>
+            <Button Content="Refresh" Margin="0,0,30,0" Height="35" Click="Button_Click_1" />
+            <Button Content="Print" Height="35" Margin="0,15" Width="47" Click="Button_Click_2" />
+        </StackPanel>
+
+    </Grid>
+    
+</Window>
